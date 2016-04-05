@@ -5,7 +5,18 @@ body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/*a { color: #00B7FF; }*/
+
+/*HOME PAGE*/
+
+#home {
+  text-align: center;
+  margin-top: 250px;
+}
+
+#mint {
+  max-height: 200px;
+  max-width: 200px;
+}
 
 .parallax-container {
   height: 250px;
@@ -37,20 +48,53 @@ nav ul a {
     color: black;
 }
 
+/*MENU*/
+
 .item-name {
   font-size: 16px;
 }
 
-appetizers {
+#appetizers {
   text-align: center;
+}
+
+/*CONTACT*/
+
+#map-info {
+  float: left;
+}
+
+#contact-info {
+  float: right;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.contact-icon {
+  padding: 0px 5px;
+}
+
+.hours {
+  margin-top: 0px;
+}
+
+.days {
+  margin-bottom: 0px;
+}
+
+#address {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #contact {
   text-align: center;
   margin-top: 150px;
+  margin: 100px 250px;
 }
 
 #map {
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 600px;
+  max-width: 600px;
+  position: relative;
 }

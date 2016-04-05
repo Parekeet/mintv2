@@ -31,22 +31,13 @@
       </ul>
       <nav>
         <div class="nav-wrapper white">
-          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#!" class="brand-logo"><img id="logo" src="css/assets/mintt.png" alt="" style="width: 50px; margin-left: 20px; margin-top: 7px"></a>
           <ul class="right hide-on-med-and-down">
-            <li><a ui-sref="home">Home&nbsp;</a></li>
+            <li><a ui-sref="home" onclick="Materialize.fadeInImage('/css/assets/MINTY.png')">Home&nbsp;</a></li>
             <li><a class="dropdown-button" ui-sref="menu" data-activates="dropdown1">&nbsp;Menu&nbsp;</a></li>
             <li><a ui-sref="about">&nbsp;About&nbsp;</a></li>
             <li><a ui-sref="contact">&nbsp;Contact&nbsp;</a></li>
-            <li id="modalorder">
-              <div>
-                <a class="waves-effect waves-light nav-tab modal-trigger" href="#modal1">Order For Pick Up</a>
-                  <div id="modal1" class="modal">
-                    <div class="modal-content">
-                      <div><a href="#signin"></a></div>
-                    </div>
-                  </div>
-                </div>
-            </li>
+            <li><a ui-sref="signin">Order For Pick Up</a></li>
           </ul>
         </div>
       </nav>
