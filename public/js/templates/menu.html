@@ -1,19 +1,44 @@
-<p>This is the menu</p>
-
 <div id="menu">
-  <div id="appetizers">
-    <p>IM THE APPETIZER</p>
+  <section>
+  <div>
+    <h1>Menu</h1>
   </div>
-  <div id="soup">
-    <p>IM THE SOUPS</p>
-  </div>
-  <div class="salad">
-    <p>IM THE SALADS</p>
-  </div>
-  <div id="entree">
-    <p>IM THE ENTREE</p>
-  </div>
-  <div id="alacarte">
-    <p>IM THE A LA CARTE</p>
-  </div>
+
+    <ul id="appetizers">
+        <h3>Appetizers</h3>
+          <li ng-repeat="items in vm.all | filter:'Appetizers' ">
+            {{items.name}}<br>
+            {{items.description}}<br>
+            {{items.amount}}<br>
+            {{items.cost}}<br><br>
+          </li>
+    </ul>
+    <ul id="salads">
+      <h3>Salads</h3>
+        <li ng-repeat="items in vm.all | filter:'Salads' ">
+          {{items.name}}<br>
+          {{items.description}}<br>
+          {{items.amount}}<br>
+          {{items.cost}}<br><br>
+        </li>
+    </ul>
+    <ul id="soups">
+      <h3>Soups</h3>
+        <li ng-repeat="items in vm.all | filter:'Soups' ">
+          {{items.name}}<br>
+          {{items.description}}<br>
+          {{items.amount}}<br>
+          {{items.cost}}<br><br>
+        </li>
+    </ul>
+    <ul id="noodles">
+      <h3>Noodles</h3>
+        <li ng-repeat="items in vm.all | filter:'Noodles' ">
+          {{items.name}}<br>
+          {{items.description}}<br>
+          {{items.amount}}<br>
+          {{items.cost}}<br><br>
+        </li>
+    </ul>
+  </section>
 </div>

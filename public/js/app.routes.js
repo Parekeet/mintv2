@@ -19,7 +19,9 @@
       })
       .state("menu", {
         url: "/menu",
-        templateUrl: "/js/templates/menu.html"
+        templateUrl: "/js/templates/menu.html",
+        controller: "MenuController",
+        controllerAs: "vm"
       })
       .state("contact", {
         url: "/contact",

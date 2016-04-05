@@ -5,42 +5,38 @@ body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a { color: #00B7FF; }
+/*a { color: #00B7FF; }*/
 
-.fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+.parallax-container {
+  height: 250px;
 }
 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+#home-background {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden;
+  background-image: url(&quot;http://nicstauber.com/video/fluries.jpeg&quot;);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
-@media (max-width: 767px) {
-    .fullscreen-bg {
-        background: url('http://pixel.brit.co/wp-content/uploads/2015/08/Thai-Beef-Noodle-Salad-Jar-Ingredients.jpg') center center / cover no-repeat;
-    }
-
-    .fullscreen-bg__video {
-        display: none;
-    }
+nav ul a {
+  transition: background-color .3s;
+  font-size: 1rem;
+  color: #444;
 }
 
-.nav-wrapper {
-  background-color: rgba(0,0,0,0.4);e;
+.dropdown-content li>a,
+.dropdown-content li>span {
+    font-size: 14px;
+    color: black;
+}
+
+.item-name {
+  font-size: 16px;
 }

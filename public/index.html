@@ -23,21 +23,30 @@
     <!-- MATERIALIZE FIXED NAVBAR GOES HERE -->
     <div class="navbar-fixed">
       <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#menu">Appetizer</a></li>
-        <li><a href="#menu" class="salad">Salad</a></li>
-        <li><a href="#menu">Soup</a></li>
-        <li><a href="#menu">Entree</a></li>
-        <li><a href="#menu">Stuff</a></li>
+        <li><a ui-sref="menu">Appetizer</a></li>
+        <li><a ui-sref="menu">Salad</a></li>
+        <li><a ui-sref="menu">Soup</a></li>
+        <li><a ui-sref="menu">Entree</a></li>
+        <li><a ui-sref="menu">Stuff</a></li>
       </ul>
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper white">
           <a href="#!" class="brand-logo">Logo</a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#home">Home</a></li>
-            <li><a class="dropdown-button" href="#menu" data-activates="dropdown1">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#signin">Order for Pick Up</a></li>
+            <li><a ui-sref="home">Home&nbsp;</a></li>
+            <li><a class="dropdown-button" ui-sref="menu" data-activates="dropdown1">&nbsp;Menu&nbsp;</a></li>
+            <li><a ui-sref="about">&nbsp;About&nbsp;</a></li>
+            <li><a ui-sref="contact">&nbsp;Contact&nbsp;</a></li>
+            <li id="modalorder">
+              <div>
+                <a class="waves-effect waves-light nav-tab modal-trigger" href="#modal1">Order For Pick Up</a>
+                  <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <div><a href="#signin"></a></div>
+                    </div>
+                  </div>
+                </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -47,12 +56,13 @@
     </header>
 
     <main class="content" ui-view>
-
     </main>
+
   </div>
 
   <script src="js/app.module.js"></script>
   <script src="js/app.routes.js"></script>
+  <script src="js/menu.controller.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
