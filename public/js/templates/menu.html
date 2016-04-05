@@ -3,42 +3,49 @@
   <div>
     <h1>Menu</h1>
   </div>
-
-    <ul id="appetizers">
-        <h3>Appetizers</h3>
-          <li ng-repeat="items in vm.all | filter:'Appetizers' ">
+    <div id="appetizers" class="menu-items">
+      <ul>
+          <h3>Appetizers</h3>
+            <li ng-repeat="items in vm.all | filter:'Appetizers' ">
+              {{items.name}}<br>
+              {{items.description}}<br>
+              {{items.amount}}<br>
+              ${{items.cost}}<br><br>
+            </li>
+      </ul>
+    </div>
+    <div id="salads" class="menu-items">
+      <ul>
+        <h3>Salads</h3>
+          <li ng-repeat="items in vm.all | filter:'Salads' ">
             {{items.name}}<br>
             {{items.description}}<br>
             {{items.amount}}<br>
             {{items.cost}}<br><br>
           </li>
-    </ul>
-    <ul id="salads">
-      <h3>Salads</h3>
-        <li ng-repeat="items in vm.all | filter:'Salads' ">
-          {{items.name}}<br>
-          {{items.description}}<br>
-          {{items.amount}}<br>
-          {{items.cost}}<br><br>
-        </li>
-    </ul>
-    <ul id="soups">
-      <h3>Soups</h3>
-        <li ng-repeat="items in vm.all | filter:'Soups' ">
-          {{items.name}}<br>
-          {{items.description}}<br>
-          {{items.amount}}<br>
-          {{items.cost}}<br><br>
-        </li>
-    </ul>
-    <ul id="noodles">
-      <h3>Noodles</h3>
-        <li ng-repeat="items in vm.all | filter:'Noodles' ">
-          {{items.name}}<br>
-          {{items.description}}<br>
-          {{items.amount}}<br>
-          {{items.cost}}<br><br>
-        </li>
-    </ul>
+      </ul>
+    </div>
+    <div id="soups" class="menu-items">
+      <ul>
+        <h3>Soups</h3>
+          <li ng-repeat="items in vm.all | filter:'Soups' ">
+            {{items.name}}<br>
+            {{items.description}}<br>
+            {{items.amount}}<br>
+            {{items.cost}}<br><br>
+          </li>
+      </ul>
+    </div>
+    <div id="noodles" class="menu-items">
+      <ul>
+        <h3>Noodles</h3>
+          <li ng-repeat="items in vm.all | filter:'Noodles' ">
+            {{items.name}}<br>
+            {{items.description}}<br>
+            {{items.amount}}<br>
+            {{items.cost}}<br><br>
+          </li>
+      </ul>
+    </div>
   </section>
 </div>

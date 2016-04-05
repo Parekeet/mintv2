@@ -40,3 +40,17 @@ nav ul a {
 .item-name {
   font-size: 16px;
 }
+
+appetizers {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#map {
+  max-height: 400px;
+  max-width: 400px;
+}
