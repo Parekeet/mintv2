@@ -6,12 +6,14 @@ var Item = require('./models/item');
 
 var users = [
   { // 0
-    handle: "DunkLord",
-    name:   "Bob Neverdunk"
+    name:  "Bob Neverdunk",
+    email: "DunkLord@gmail.com",
+    password:  "abc"
   },
   { // 1
-    handle: "MoneyMarge",
-    name:   "Margaret Kalanchoe"
+    name:   "Margaret Kalanchoe",
+    email: "MoneyMarge@gmail.com",
+    password: "123"
   }
 ];
 

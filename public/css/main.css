@@ -98,3 +98,10 @@ nav ul a {
   max-width: 600px;
   position: relative;
 }
+
+form {
+   text-align: left;
+   max-width: 500px;
+   margin: 0 auto;
+ }
+

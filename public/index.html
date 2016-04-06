@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
   <link rel="stylesheet" href="css/main.css">
 
-<!--   <script src="/js/jwt-decode.2.0.1.js"></script>
- -->
+  <script src="/js/jwt-decode.2.0.1.js"></script>
+
   <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
@@ -33,7 +33,7 @@
         <div class="nav-wrapper white">
           <a href="#!" class="brand-logo"><img id="logo" src="css/assets/mintt.png" alt="" style="width: 50px; margin-left: 20px; margin-top: 7px"></a>
           <ul class="right hide-on-med-and-down">
-            <li><a ui-sref="home" onclick="Materialize.fadeInImage('/css/assets/MINTY.png')">Home&nbsp;</a></li>
+            <li><a ui-sref="home" onclick="Materialize.fadeInImage('css/assets/MINTY.png')">Home&nbsp;</a></li>
             <li><a class="dropdown-button" ui-sref="menu" data-activates="dropdown1">&nbsp;Menu&nbsp;</a></li>
             <li><a ui-sref="about">&nbsp;About&nbsp;</a></li>
             <li><a ui-sref="contact">&nbsp;Contact&nbsp;</a></li>
@@ -53,7 +53,11 @@
 
   <script src="js/app.module.js"></script>
   <script src="js/app.routes.js"></script>
+  <script src="js/token.service.js"></script>
+  <script src="js/user.service.js"></script>
+  <script src="js/auth.service.js"></script>
   <script src="js/menu.controller.js"></script>
+  <script src="js/signin.controller.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

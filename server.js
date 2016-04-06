@@ -24,6 +24,13 @@ app.set('view engine', 'ejs');
 // Create local variables for use thoughout the application.
 app.locals.title = app.get('title');
 
+
+// CORS allows a separate client, like Postman, to send requests
+// (in development only…)
+if (app.get('env') === 'development') {
+  app.use(allowCors); // See helper at bottom.
+}
+
 // Logging layer.
 app.use(logger('dev'));
 
@@ -44,6 +51,19 @@ app.use(debugReq);
 
 // Defines all of our "dynamic" routes.
 app.use('/', routes);
+
+function allowCors(req, res, next) {
+  res.header('Access-Control-Allow-Origin',  '*');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+
+  // Handle "preflight" requests.
+  if ('OPTIONS' == req.method) {
+    res.send(200);
+  } else {
+    next();
+  }
+}
 
 // Catches all 404 routes.
 app.use(function(req, res, next) {

@@ -11,25 +11,27 @@
     $stateProvider
       .state("home", {
         url: "/",
-        templateUrl: "/js/templates/home.html"
+        templateUrl: "js/templates/home.html"
       })
       .state("about", {
         url: "/about",
-        templateUrl: "/js/templates/about.html"
+        templateUrl: "js/templates/about.html"
       })
       .state("menu", {
         url: "/menu",
-        templateUrl: "/js/templates/menu.html",
+        templateUrl: "js/templates/menu.html",
         controller: "MenuController",
         controllerAs: "vm"
       })
       .state("contact", {
         url: "/contact",
-        templateUrl: "/js/templates/contact.html"
+        templateUrl: "js/templates/contact.html"
       })
       .state("signin", {
         url: "/signin",
-        templateUrl: "/js/templates/signin.html"
+        templateUrl: "js/templates/signin.html",
+        controller: "SigninController",
+        controllerAs: "vm"
       });
 
       $urlRouterProvider.otherwise("/");
